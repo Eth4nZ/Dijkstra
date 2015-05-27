@@ -17,8 +17,8 @@ private:
 public:
     MinHeap(int);
     ~MinHeap();
-    void insert(Dist*);
-    Dist* removeMin();
+    void insert(Dist);
+    Dist removeMin();
 
     bool isEmpty();
     int getHeapSize(){

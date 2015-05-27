@@ -21,7 +21,7 @@ MinHeap::~MinHeap(){
     }
 }
 
-void MinHeap::insert(Dist* rhs){
+void MinHeap::insert(Dist rhs){
     if(heapSize == capacity){
         cerr << "No more room in this heap!" << endl;
         return;
@@ -96,7 +96,7 @@ void MinHeap::percDown(int curIndex){
     return;
 }
 
-Dist* MinHeap::removeMin(){
+Dist MinHeap::removeMin(){
     Dist* value = new Dist();
     *value = *storage[0];
     //replace 1st & last slot;

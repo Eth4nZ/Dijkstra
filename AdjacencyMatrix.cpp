@@ -63,3 +63,14 @@ void AdjacencyMatrix::delEdge(int from, int to){
     matrix[from][to] = 0;
 }
 
+int AdjacencyMatrix::fromVertex(Edge edge){
+    return edge.getFrom();
+}
+
+int AdjacencyMatrix::toVertex(Edge edge){
+    return edge.getTo();
+}
+
+int AdjacencyMatrix::weight(Edge edge){
+    return edge.getWeight();
+}
