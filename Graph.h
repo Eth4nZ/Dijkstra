@@ -14,15 +14,17 @@ public:
     ~Graph();
     int vecticesNumber();
     int edgesNumber();
-    Edge firstEdge(int oneVertex);
-    Edge nextEdge(Edge pre);
-    void setEdge(int from, int to, int weight);
-    void delEdge(int from, int to);
+    void setNumEdge(int numEdge);
+    bool* getVisited();
+    int* getIndegree();
     bool isEdge(Edge edge);
-    int fromVertex(Edge edge);
-    int toVertex(Edge edge);
-    int weight(Edge edge);
-
+    virtual Edge firstEdge(int oneVertex);
+    virtual Edge nextEdge(Edge pre);
+    virtual void setEdge(int from, int to, int weight);
+    virtual void delEdge(int from, int to);
+    virtual int fromVertex(Edge edge);
+    virtual int toVertex(Edge edge);
+    virtual int weight(Edge edge);
 };
 
 #endif

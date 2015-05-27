@@ -12,6 +12,9 @@ Edge::Edge(int from, int to, int weight){
     this->weight = weight;
 }
 
+Edge::~Edge(){
+}
+
 int Edge::getFrom(){
     return from;
 }

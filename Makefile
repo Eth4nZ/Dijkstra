@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -c -Wall
 
-SOURCES = Edge.cpp
+SOURCES = Edge.cpp Graph.cpp AdjacencyMatrix.cpp Dijkstra.cpp main.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = a
 
